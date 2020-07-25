@@ -6,13 +6,15 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "NODE_ENV=production node ./dist/server.generated.js"
+    "start-win": "set NODE_ENV=production && node ./dist/server.generated.js",
+    "start-nix": "NODE_ENV=production node ./dist/server.generated.js"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "file-loader": "^6.0.0",
     "fileloader": "^2.0.0",
     "nodemon": "^2.0.4",
     "webpack": "^4.43.0",
