@@ -8,6 +8,7 @@ export default () =>
         </head>
         <body>
             <div id="root">Hello World</div>
+            <script type="text/javascript" src="/dist/bundle.js"></script>
         </body>
     </html>
     `
